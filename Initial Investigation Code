@@ -34,11 +34,10 @@ SELECT
   *
 FROM
   ML.EVALUATE(MODEL `sql-coding-sample-1.Medicare.infone`);
-  
-  #PREDICT
 
 #################
 
+#PREDICT
 SELECT
 *
 FROM
