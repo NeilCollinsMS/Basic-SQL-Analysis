@@ -17,6 +17,8 @@ FROM
   
 # Result: No correlation (R^2 = 0.008), further analysis needed. 
 
+################
+
 #WEIGHTS
 SELECT
   *
@@ -24,6 +26,9 @@ FROM
   ML.WEIGHTS(MODEL `sql-coding-sample-1.Medicare.infone`,
   STRUCT(true AS standardize));
   
+  
+################
+
   #EVALUATE
 SELECT
   *
@@ -31,6 +36,8 @@ FROM
   ML.EVALUATE(MODEL `sql-coding-sample-1.Medicare.infone`);
   
   #PREDICT
+
+#################
 
 SELECT
 *
